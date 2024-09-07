@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="counter">0</h1>
+    <div class="overlay">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <div class = "portfolio">
+                <a href="https://tinyurl.com/4h9scp8x">Lynelle Fernandes</a>
+            </div>
+            <div>
+                <a href="#Projects">Projects</a>
+            </div>
+        </nav>
+        <div class="header">
+            <div class="h1">Ja</div>
+            <div class="h1">va</div>
+            <div class="h1">sc</div>
+            <div class="h1">ri</div>
+            <div class="h1">pt</div>
+            <div class="h1">.</div>
+        </div>
+
+        <div class="info">
+            <div class="hero">
+                <div class="calendar">
+                    <div class="date">
+                        <p id="date">01</p>
+                        <p id="day">Sunday</p>
+                    </div>
+                    <div class="month">
+                        <p id="month">March</p>
+                        <p id="year">1998</p>
+                    </div>
+                </div>
+    
+                <div class="time">
+                    <div class="clock">
+                        <span id="hrs">00</span>
+                        <span>:</span>
+                        <span id="min">00</span>
+                        <span>:</span>
+                        <span id="sec">00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-box">
+                <div class="card">
+                    <div class="search">
+                        <input id="cityname" type="text" placeholder="Enter City Name" spellcheck="false">
+                        <button id="submit"><img src = "images/search.png"></button>
+                    </div>
+                    <div>
+                        <ul class="list">
+                        </ul>
+                    </div>
+                    <div class = "error">
+                        <p>Invalid City Name</p>
+                    </div>
+                    <div class="weather">
+                        <img src="images/rain.png" class="weather-icon">
+                        <h1 class="temp">22°C</h1>
+                        <h2 class="city">New York</h2>
+                    </div>
+                    <div class="details">
+                        <div class="col">
+                            <img src = "images/humidity.png">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src = "images/wind.png">
+                            <div>
+                                <p class="wind">15 km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="proj-info" id = "Projects">
+            <div class = "quote-box">
+                <h2>Quote of the Day!</h2>
+                <div class = "quote">
+                    <img class="q" src="images/openq.webp">
+                    <blockquote id="quote"></blockquote>
+                    <img class="q e" src="images/closeq.webp">
+                </div>
+                <span id="author">
+                    Loading...
+                </span>
+            </div>
+            <div class="wrapper">
+                <div class="proj-container">
+                    <!---Project : Landing Page-->
+                    <input type="radio" name="slide" id="c1">
+                    <label for="c1" class="proj-card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Landing Page</h4>
+                                <p>MiniZoo highlights a carousel in javascript <br/> 
+                                    Crypto site shows dynamic data using APIs
+                                </p>
+                                <div class = "proj-link">
+                                    <button><a href = "https://lynelle0503.github.io/Zoo/">Mini-Zoo</a></button>
+                                    <button><a href = "https://lynelle0503.github.io/CryptoSite/">Crypto</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    <!---Project : Productivity-->
+                    <input type="radio" name="slide" id="c2" checked>
+                    <label for="c2" class="proj-card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4>Productivity</h4>
+                                <p>Maintain Notes, To-do list recorded in your browser <br/>
+                                Calculate your age as we as simple Math as well!</p>
+                                <button><a href = "">Link</a></button>
+                            </div>
+                        </div>
+                    </label>
+                    <!---Project : Generators-->
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="proj-card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4>Generators</h4>
+                                <p>Generate quick QR codes or strong Passwords here.</p>
+                                <button><a href = "">Link</a></button>
+                            </div>
+                        </div>
+                    </label>
+                    <!---Project : Fun Sites-->
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="proj-card">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description">
+                                <h4>Fun Sites</h4>
+                                <p>Quiz yourself on basics or Search Images linked with apis</p>
+                                <button><a href = "">Link</a></button>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
